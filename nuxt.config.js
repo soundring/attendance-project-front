@@ -48,6 +48,5 @@ module.exports = {
       position: 'top-center',
       fullWidth: true,
       duration: 2000,
-      className: 'toasted'
-  }
+  },
 }
