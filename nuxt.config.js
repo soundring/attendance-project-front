@@ -35,6 +35,19 @@ module.exports = {
       }
     }
   },
-  plugins: ['@/plugins/dayjs']
+  plugins: [
+    '@/plugins/dayjs',
+  ],
+   modules: [
+   '@nuxtjs/toast',
+  ],
+  css: [
+    '@/assets/css/toasted.css'
+  ],
+  toast: {
+      position: 'top-center',
+      fullWidth: true,
+      duration: 2000,
+      className: 'toasted'
+  }
 }
-

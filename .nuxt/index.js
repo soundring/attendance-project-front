@@ -10,6 +10,7 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
+import nuxt_plugin_toast_ea0d265c from 'nuxt_plugin_toast_ea0d265c' // Source: ./toast.js (mode: 'client')
 import nuxt_plugin_dayjs_2248fc71 from 'nuxt_plugin_dayjs_2248fc71' // Source: ../plugins/dayjs (mode: 'all')
 
 // Component: <NoSsr>
@@ -128,6 +129,10 @@ async function createApp(ssrContext) {
   }
 
   // Plugin execution
+
+  if (process.client && typeof nuxt_plugin_toast_ea0d265c === 'function') {
+    await nuxt_plugin_toast_ea0d265c(app.context, inject)
+  }
 
   if (typeof nuxt_plugin_dayjs_2248fc71 === 'function') {
     await nuxt_plugin_dayjs_2248fc71(app.context, inject)

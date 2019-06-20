@@ -1,0 +1,4 @@
+import toasted from 'vue-toasted';
+import Vue from 'vue'
+
+Vue.prototype.$toasted = toasted

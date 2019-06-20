@@ -13,9 +13,11 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/toast": "^3.2.1",
     "add": "^2.0.6",
     "dayjs": "^1.8.14",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "vue-toasted": "^1.1.27"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
