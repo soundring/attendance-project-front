@@ -12,8 +12,8 @@
 export default {
   data()  {
       return {
-        now: null,
-        time: null
+        now: "XXXX年XX月XX日",
+        time: "XX:XX:XX"
       }
 
   },
@@ -23,8 +23,8 @@ export default {
         this.time = this.$dayjs().format('HH:mm:ss')
     }
   },
-  mounted() {
-    this.updateTime = setInterval(this.updateTime, 1000)
+  created() {
+    setInterval(this.updateTime, 1000)
   },
   destroyed() {
       clearInterval(this.updateTime)
