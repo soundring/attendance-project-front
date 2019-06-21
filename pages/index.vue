@@ -5,6 +5,7 @@
     <displayTime />
     <attendanceButton />
   </div>
+   <attendanceTable />
 </div>
 </template>
 
@@ -12,11 +13,13 @@
 import displayTime from '~/components/DisplayTime'
 import attendanceButton from '~/components/AttendanceButton'
 import navbar from '~/components/NavBar'
+import attendanceTable from '~/components/AttendanceTable'
 export default {
   components: {
     displayTime,
     attendanceButton,
     navbar,
+    attendanceTable,
   }
 }
 </script>
