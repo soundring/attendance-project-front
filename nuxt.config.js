@@ -40,6 +40,7 @@ module.exports = {
   ],
    modules: [
    '@nuxtjs/toast',
+   '@nuxtjs/bulma'
   ],
   css: [
     '@/assets/css/toasted.css'

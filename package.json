@@ -13,6 +13,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/bulma": "^1.2.4",
     "@nuxtjs/toast": "^3.2.1",
     "add": "^2.0.6",
     "dayjs": "^1.8.14",
