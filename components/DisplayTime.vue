@@ -35,6 +35,7 @@ export default {
 
 <style>
 .now  {
+    flex: 2;
     font-size: 28px;
     text-align: center;
 }
