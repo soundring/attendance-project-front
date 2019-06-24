@@ -35,6 +35,7 @@ module.exports = {
       }
     }
   },
+  mode: "spa",
   plugins: [
     '@/plugins/dayjs',
   ],
@@ -47,7 +48,7 @@ module.exports = {
   ],
   toast: {
       position: 'top-center',
-      fullWidth: true,
+      fullWidth: false,
       duration: 2000,
   },
 }

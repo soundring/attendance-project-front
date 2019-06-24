@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="attendance_table">
         <table class="table is-bordered">
             <thead>
                 <tr>
@@ -12,14 +12,14 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>6/21</td>
-                    <td>音成優樹</td>
-                    <td>9:00</td>
-                    <td>18:00</td>
-                    <td>8</td>
-                    <td>0</td>
-                </tr>
+                    <tr v-for="n in 10" :key="n">
+                        <td>6/21</td>
+                        <td>音成優樹</td>
+                        <td>9:00</td>
+                        <td>18:00</td>
+                        <td>8</td>
+                        <td>{{n}}</td>
+                    </tr>
             </tbody>
           
         </table>
@@ -28,10 +28,16 @@
 
 <script>
 export default {
-    
+    data() {
+        return {
+            n: 0,
+        }
+    }
 }
 </script>
 
 <style>
-
+.attendance_table {
+    text-align: -webkit-center;
+}
 </style>

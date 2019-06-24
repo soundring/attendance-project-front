@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Toasted from 'vue-toasted'
 
-Vue.use(Toasted, {"position":"top-center","fullWidth":true,"duration":2000})
+Vue.use(Toasted, {"position":"top-center","fullWidth":false,"duration":2000})
 
 const globals = undefined
 if(globals) {
